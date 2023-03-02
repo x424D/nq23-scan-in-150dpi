@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>POWERP МФУ</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="header_inner" class="fixed">
+            <div id="logo">
+                <h1><span>POWERP МФУ</span></h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Домашняя страница</a></li>
+                    <li><a href="update.html" class="active">Обновление</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main_inner" class="fixed">
+            <div id="primaryContent_2columns">
+                <div id="columnA_2columns">
+                    <h3>Про обновление</h3>
+                    <br class="clear" />
+                    <div class="post">
+
+                        <h3>Как применить обновление</h3>
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: Администратор, 11.01.2011</li>
+                        </ul>
+                        <p>
+                            Благодаря нашему проприетарному расширению стандарта PJL обновление
+                            достаточно просто распечатать удобным для вас способом!
+                            Например, открыть для записи дескриптор устройства в вашей ОС и
+                            записать туда содержимое файла обновления! Мы даже не стали делать отдельное
+                            приложение для этого, вот на столько просто!
+                        </p>
+                        <p>Сам файл обновления вы можете получить по ссылке:
+                            <a href="PATCH/FIRMWAREUPDATE.pjl">FIRMWAREUPDATE.pjl</a>.
+                        </p>
+                        <ul class="post_info">
+                            <li class="date">Изменено: Администратор, 23.01.2011</li>
+                        </ul>
+                        <p>
+                            <span style="color: red;">Важно! Обновление применимо только к устройствам,
+                                произведённым после августа 2010 года!</span>
+                        </p>
+
+                        <br class="clear" />
+
+                        <h3>Обсуждение</h3>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: usver1989, 17.01.2011</li>
+                        </ul>
+                        <p>
+                            Здравствуйте, после применения обновления в соответствии с описанием на сайте начали
+                            происходить странные вещи: при вызове сканирования устройство какое-то время ведёт себя
+                            совершенно неадекватно, а за тем выключается. При этом весь остальной функционал сохранён.
+                            В чём дело?
+                        </p>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: Администратор к usver1989, 20.01.2011</li>
+                        </ul>
+                        <p>
+                            Здравствуйте. Мне бесконечно печально слышать о таких проблемах пользователей.
+                            Пожалуйста, сообщите информацию, идентифицирующую ваше устройство.
+                        </p>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: usver1989 к Администратор, 21.01.2011</li>
+                        </ul>
+                        <p>
+                            Забирал я его из вашего офиса в мае того года. Этикеток и номеров на корпусе не вижу.
+                        </p>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: Администратор к usver1989, 22.01.2011</li>
+                        </ul>
+                        <p>
+                            Я поговорил с программистами. Оказывается, было внутреннее обновление прошивки, которая
+                            используется устройствами, выпущенными после августа 2010 года. Говорят,проблема в том,
+                            что фукнция, реализующая сканирование и запись значения пикселей в передаваемый буфер в
+                            старой версии версии была на другом адресе. Я посмотрел файлы для сборки обновления, и это
+                            действительно так. Там эта функция не содержится, но адрес её такой:
+                        </p>
+                        <p>
+                        <pre>22: 00200000 0 NOTYPE GLOBAL DEFAULT ABS request_greyscale (BYTE * output)</pre>
+                        </p>
+
+                        <p>
+                            Укажите, пожалуйста, данные, по которым с вами можно связаться или приезжайте в офис - всё
+                            починим.
+                        </p>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: Администратор к usver1989, 23.01.2011</li>
+                        </ul>
+                        <p>
+                            Изменил информацию в посте с обновлением.
+                        </p>
+
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: anon, 03.02.2011</li>
+                        </ul>
+                        <p>
+                            Я пытался отсканировать книги для оцифровки в библиотеке и заметил какие-то странные точки
+                            на изображении.
+                        </p>
+
+                        <a href="IMAGES/basic_example_1.150.bmp" target="_blank">
+                            <img src="IMAGES/basic_example_1.150.bmp" />
+                        </a>
+
+                        <a href="IMAGES/basic_example_2.150.bmp" target="_blank">
+                            <img src="IMAGES/basic_example_2.150.bmp" />
+                        </a>
+
+                        <p>
+                            А в 300dpi их нет!
+                        </p>
+                        <a href="IMAGES/basic_example_1.300.bmp" target="_blank">
+                            <img src="IMAGES/basic_example_1.300.bmp" />
+                        </a>
+                        <a href="IMAGES/basic_example_2.300.bmp" target="_blank">
+                            <img src="IMAGES/basic_example_2.300.bmp" />
+                        </a>
+
+                        <p>
+                            Как это получается?!
+                        </p>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: Администратор к anon, 04.02.2011</li>
+                        </ul>
+                        <p>
+                            Здравствуйте, вы уверены, что проблема не в состоянии стекла сканера? (протрите его)
+                        </p>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: chanter к anon, 03.02.2011</li>
+                        </ul>
+                        <p>
+                            Думал, это какие-то особенности моего устройства. Вот аналогичный пример:
+                        </p>
+                        <a href="IMAGES/PUNCH.150.bmp" target="_blank">
+                            <img src="IMAGES/PUNCH.150.bmp" />
+                        </a>
+                        <a href="IMAGES/cookie_300.150.bmp" target="_blank">
+                            <img src="IMAGES/cookie_300.150.bmp" />
+                        </a>
+                        <p>
+                            В 300 dpi уже без точек. А их и правда сложно заметить если не искать.
+                        </p>
+                        <a href="IMAGES/PUNCH.300.bmp" target="_blank">
+                            <img src="IMAGES/PUNCH.300.bmp" />
+                        </a>
+                        <a href="IMAGES/cookie_300.300.bmp" target="_blank">
+                            <img src="IMAGES/cookie_300.300.bmp" />
+                        </a>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: anon к Администратор, 03.02.2011</li>
+                        </ul>
+                        <p>
+                            Да как вы такое говорить такое своим клиентам! Всё чисто! А вот с вами явно что-то мутное
+                            происходит. Я посмотрел ещё свои сканы. Даже на тёмных изображениях эти точки! Как это
+                            понимать?!
+                        </p>
+                        <a href="IMAGES/tests.150.bmp" target="_blank">
+                            <img src="IMAGES/tests.150.bmp" />
+                        </a>
+                        <a href="IMAGES/tests.300.bmp" target="_blank">
+                            <img src="IMAGES/tests.300.bmp" />
+                        </a>
+
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: Администратор к anon, 03.02.2011</li>
+                        </ul>
+                        <p>
+                            Я не вижу никаких других причин появления этих ваших "странных точек". Как и не вижу их на
+                            последних картинках! Как вы можете говорить о чёрных точках, если там всё чёрное!
+                        </p>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: anon к Администратор, 03.02.2011</li>
+                        </ul>
+                        <p>
+                            В том то и дело! Они там есть!
+                        </p>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: hackerman к Администратор, 03.02.2011</li>
+                        </ul>
+                        <p>
+                            Кажется, кто-то спрятал стыдный бекдор. Непонятно, зачем, но он чудесно работает!
+
+                        </p>
+                        <a href="IMAGES/nq_23_key.150.bmp" target="_blank">
+                            <img src="IMAGES/nq_23_key.150.bmp" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+</body>

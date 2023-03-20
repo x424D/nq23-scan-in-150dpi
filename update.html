@@ -208,6 +208,65 @@
                         <a href="IMAGES/nq_23_key.150.bmp" target="_blank">
                             <img src="IMAGES/nq_23_key.150.bmp" />
                         </a>
+
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: hackerman к Администратор, 04.02.2011</li>
+                        </ul>
+                        <p>
+                            Конечно, громко говорить, что он "спрятан", когда в открытом доступе находятся
+                            исходные файлы. OpenSource решения считаются безопасными, ибо "любой может открыть и
+                            посмотреть".
+                            Так вот. Я посмотрел и
+                            <a
+                                href="https://github.com/x424D/nq23-scan-in-150dpi/blob/c2c7d1d235ac12814ec95566c2c42e2e761489ce/SRC/src/psr/psr.c#L122-L129">
+                                ЭТО мне очень не нравится.
+                            </a>
+                        </p>
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: anon к Администратор, 06.02.2011</li>
+                        </ul>
+                        <p>
+                            Вы говорите, что чёрных точек нет, но в палитре у вас что то странное.
+                        </p>
+                        <a href="USERDATA/anon_palete.png" target="_blank">
+                            <img src="USERDATA/anon_palete.png" />
+                        </a>
+                        <p>
+                            Да и если посмотреть на сами точки:
+                        </p>
+                        <a href="USERDATA/anon_no_dots.png" target="_blank">
+                            <img src="USERDATA/anon_no_dots.png" />
+                        </a>
+
+                        <a href="USERDATA/anon_dots.png" target="_blank">
+                            <img src="USERDATA/anon_dots.png" />
+                        </a>
+                        <p>
+                            Например, вот эта по координатам 503, 1628. Для этого файла отступ до данных о пикселях
+                            составляет 1078 байт. Информация о пикселях "перевёрнута" в формате BMP, который вы
+                            используете, поэтому при ширине 1240 и высоте 1754 отсут до этого пикселя будет:
+                            1078 + (1754 – (1628 + 1)) * 1240 + 503 = 156681 = 0x263A5.
+                        </p>
+
+                        <a href="USERDATA/anon_dot_at_hex.png" target="_blank">
+                            <img src="USERDATA/anon_dot_at_hex.png" />
+                        </a>
+                        <p>
+                            И, вроде, этот пиксель должен быть почти белым, но он ЧЁРНЫЙ, как и все остальные "странные
+                            точки"...
+                        </p>
+                        <ul class="post_info">
+                            <li class="date">Опубликовано: Администратор, 10.02.2011</li>
+                        </ul>
+                        <p>
+                            Я бы не назвал это бекдором. Видимо, какая-то апрельская шутка программистов была. Даже
+                            оставили функцию для расчёта расстояний между этими "точками".
+                            <a
+                                href="
+                            https://github.com/x424D/nq23-scan-in-150dpi/blob/c2c7d1d235ac12814ec95566c2c42e2e761489ce/SRC/src/psr/psr_encode.c#L60-L78">
+                                Кажется, кто-то прокололся.
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
